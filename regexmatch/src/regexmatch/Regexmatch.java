@@ -2,8 +2,12 @@ package regexmatch;
 
 public class Regexmatch {
 
-    public static void main(String[] args) {
-        System.out.println("hello world");
+    public static boolean isTrue(String str) {
+        return str.matches("[Tt]rue");
     }
-    
+
+    public static void main(String[] args) {
+        System.out.println(isTrue("true"));
+    }
+
 }
